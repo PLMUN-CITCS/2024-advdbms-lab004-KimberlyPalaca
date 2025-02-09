@@ -1,6 +1,7 @@
 USE UniversityDB;
 
--- Alter the table to add an Email column
-ALTER TABLE Students
-ADD Email VARCHAR(100);
+-- Add the Email column only if it doesn't exist
+ALTER TABLE Students ADD COLUMN Email VARCHAR(100);
 
+
+DESCRIBE Students;
